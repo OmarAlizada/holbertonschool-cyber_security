@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$1" \( -perm -4000 -o -perm -2000 \) -mtime 0 -exec ls -ld {} \;
+find "$1" -type f \( -perm -4000 -o -perm -2000 \) -mtime -1 | sort | xargs ls -l
