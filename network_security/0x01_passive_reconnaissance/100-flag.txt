@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "bc41162998d0f50aa29b2126081fb69d"
