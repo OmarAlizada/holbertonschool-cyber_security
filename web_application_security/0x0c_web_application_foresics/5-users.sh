@@ -14,4 +14,6 @@ then
 	exit 1
 fi
 
-sed -n 's/.*new user: name=\([^, ]*\),.*/\1/p' "$log_file" | sort -u | paste -sd, -
+sed -n 's/.*new user: name=\([^, ]*\),.*/\1/p' "$log_file" |
+	sort -u |
+	paste -sd, -
